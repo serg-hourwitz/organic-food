@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <p class="title">${product.title}</p>
         <div class="info df align-e justify-b">
           <p class="price">
-            <span class="full">${product.price}</span>
+            <span class="full">${product.price}</span> 
             <span class="discount">${product.discountPrice}</span>
           </p>
           <div class="rating">
