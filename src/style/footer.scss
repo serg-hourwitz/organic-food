@@ -3,6 +3,26 @@ footer {
     padding-bottom: 0;
   }
 
+  .footer_top {
+    padding-bottom: 100px;
+    border-bottom: 1px solid #D4D4D4;
+  }
+
+  .contacts {
+    padding-right: 50px;
+    padding-bottom: 36px;
+  }
+
+  .about {
+    padding: 0 40px;
+    border-right: solid 1px #D4D4D4;
+    border-left: solid 1px #D4D4D4;
+  }
+
+  .utilities {
+    padding-left: 50px;
+  }
+
   .logo {
     height: 55px;
     margin: 0 auto 15px;
@@ -14,7 +34,8 @@ footer {
     line-height: 105%;
 
     &.description {
-      margin-bottom: 30px;
+      margin-bottom: 50px;
+      line-height: 150%;
     }
 
     &.copyright {
@@ -25,17 +46,60 @@ footer {
   h3 {
     font-size: 30px;
     text-align: center;
-    margin-bottom: 10px;
+  }
+
+  h3.contacts_title {
+    margin-bottom: 32px;
+    text-align: end;
+  }
+
+  h3.utilities_title {
+    text-align: start;
+    margin-bottom: 24px;
   }
 
   ul {
-    gap: 50px;
-    padding-bottom: 70px;
-    border-bottom: solid 1px $text-color;
+    flex-direction: column;
 
     li {
       font-size: 18px;
       color: #525C60;
+    }
+  }
+
+  ul.contacts_list {
+    gap: 50px;
+
+    li.contacts_item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      strong,
+      a {
+        text-align: end;
+      }
+    }
+  }
+
+  ul.utilities_list {
+    gap: 24px;
+  }
+
+  .about__socials {
+    gap: 15px;
+
+    .item {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #EFF6F1;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -94,6 +158,18 @@ footer {
   }
 
   @include onSmallTablet {
+    .contacts {
+      padding-right: 20px;
+    }
+
+    .about {
+      padding: 0 20px;
+    }
+
+    .utilities {
+      padding-left: 20px;
+    }
+
     .logo {
       height: 30px;
     }
@@ -120,4 +196,51 @@ footer {
       }
     }
   }
+
+  @include onMobile {
+    .footer_top {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .contacts,
+    .utilities {
+      padding: 0;
+    }
+
+    .about {
+      border-left: none;
+      border-right: none;
+      padding: 50px 0;
+      border-top: 1px solid #D4D4D4;
+      border-bottom: 1px solid #D4D4D4;
+    }
+
+    h3.contacts_title {
+      text-align: start;
+    }
+
+    ul.contacts_list {
+      gap: 20px;
+      li.contacts_item {
+        align-items: start;
+        text-align: start;
+
+        strong,
+        a {
+          text-align: start;
+        }
+      }
+    }
+
+    .utilities_title {
+      padding-top: 20px;
+    }
+
+    ul.utilities_list {
+      gap: 16px;
+      padding-bottom: 0;
+  }
+}
 }
