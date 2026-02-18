@@ -127,6 +127,18 @@ footer {
   }
 
   @include onLargeTablet {
+    .contacts {
+      padding-right: 10px;
+    }
+
+    .about {
+      padding: 0 10px;
+    }
+
+    .utilities {
+      padding-left: 10px;
+    }
+
     .logo {
       margin-bottom: 10px;
     }
@@ -194,50 +206,58 @@ footer {
   }
 
   @include onMobile {
+
     .footer_top {
-      flex-direction: column;
-      align-items: center;
-      padding: 40px;
-    }
+      flex-wrap: wrap;
+      padding-bottom: 0;
 
-    .contacts,
-    .utilities {
-      padding: 0;
-    }
+      .contacts {
+        padding-right: 30px;
+        padding-bottom: 0;
+      }
 
-    .about {
-      border-left: none;
-      border-right: none;
-      padding: 50px 0;
-      border-top: 1px solid #D4D4D4;
-      border-bottom: 1px solid #D4D4D4;
-    }
+      .utilities {
+        padding-left: 30px;
+      }
 
-    h3.contacts_title {
-      text-align: start;
-    }
+      .about {
+        order: 1;
+      }
 
-    ul.contacts_list {
-      gap: 20px;
+      .about {
+        border-left: none;
+        border-right: none;
+        padding: 20px 0;
+        border-top: 1px solid #D4D4D4;
+      }
 
-      li.contacts_item {
-        align-items: start;
+      h3.contacts_title {
         text-align: start;
+        margin-bottom: 24px;
+      }
 
-        strong,
-        a {
+      ul.contacts_list {
+        gap: 20px;
+
+        li.contacts_item {
+          align-items: start;
           text-align: start;
+
+          strong,
+          a {
+            text-align: start;
+          }
         }
       }
-    }
 
-    .utilities_title {
-      padding-top: 20px;
-    }
+      .utilities_title {
+        padding-top: 0px;
+      }
 
-    ul.utilities_list {
-      gap: 16px;
-      padding-bottom: 0;
+      ul.utilities_list {
+        gap: 16px;
+        padding-bottom: 0;
+      }
     }
   }
 }
