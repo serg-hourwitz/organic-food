@@ -127,6 +127,9 @@ footer {
   }
 
   @include onLargeTablet {
+    .footer_top {
+      padding-bottom: 0;
+    
     .contacts {
       padding-right: 10px;
     }
@@ -164,8 +167,10 @@ footer {
       }
     }
   }
+}
 
   @include onSmallTablet {
+    
     .contacts {
       padding-right: 20px;
     }
@@ -209,7 +214,7 @@ footer {
 
     .footer_top {
       flex-wrap: wrap;
-      padding-bottom: 0;
+      
 
       .contacts {
         padding-right: 30px;

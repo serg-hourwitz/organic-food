@@ -30,10 +30,12 @@
   </head>
   <body>
     <header id="header">
+      <!-- DESKTOP -->
       <div class="container df justify-b align-c desktop-menu">
         <div class="logo">
           <img src="./assets/images/logo.webp" alt="Organic">
         </div>
+
         <nav class="nav">
           <ul class="df">
             <li><a href="#about">About</a></li>
@@ -42,6 +44,7 @@
             <li><a href="#news">News</a></li>
           </ul>
         </nav>
+
         <div class="features df align-c">
           <div class="search df align-c">
             <input type="text">
@@ -49,15 +52,10 @@
               <img src="./assets/images/search-icon.svg" alt="Search">
             </button>
           </div>
-          <div class="cart df align-c" id="cart-modal-btn"
-            data-modal-id="cart-modal">
-            <div class="cart-icon">
-              <img src="./assets/images/cart-icon.svg" alt="Cart">
-            </div>
-            <p>Cart (<span>0</span>)</p>
-          </div>
         </div>
       </div>
+
+      <!-- MOBILE -->
       <div class="container df justify-b align-c mobile-menu">
         <button type="button" class="burger df justify-c align-c"
           id="toggle-burger-menu">
@@ -65,17 +63,20 @@
           <img src="./assets/images/cross-icon.svg" alt="Close burger menu"
             class="hidden">
         </button>
+
         <div class="logo">
           <img src="./assets/images/logo.webp" alt="Organic">
         </div>
+
         <div class="features df align-c">
           <div class="search df align-c">
             <input type="text">
-            <button type="button" class="search-btn">
+            <button type="button">
               <img src="./assets/images/search-icon.svg" alt="Search">
             </button>
           </div>
         </div>
+
         <nav class="nav">
           <ul>
             <li><a href="#about">About</a></li>
@@ -86,6 +87,15 @@
         </nav>
       </div>
     </header>
+
+    <!-- 🔥 ГЛОБАЛЬНИЙ CART -->
+    <div class="cart df align-c" id="cart-modal-btn" data-modal-id="cart-modal">
+      <div class="cart-icon df justify-c align-c">
+        <img src="./assets/images/cart-icon.svg" alt="Cart">
+      </div>
+      <p>Cart (<span>0</span>)</p>
+    </div>
+
     <main>
       <section class="sec-1 df fc justify-c" id="about">
         <div class="container">
