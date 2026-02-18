@@ -90,16 +90,12 @@ footer {
     gap: 15px;
 
     .item {
+      display: block;
       width: 60px;
       height: 60px;
+      padding: 20px;
       border-radius: 50%;
       background-color: #EFF6F1;
-    }
-
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
   }
 
@@ -223,6 +219,7 @@ footer {
 
     ul.contacts_list {
       gap: 20px;
+
       li.contacts_item {
         align-items: start;
         text-align: start;
@@ -241,6 +238,6 @@ footer {
     ul.utilities_list {
       gap: 16px;
       padding-bottom: 0;
+    }
   }
-}
 }
