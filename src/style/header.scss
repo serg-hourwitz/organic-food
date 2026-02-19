@@ -73,7 +73,30 @@ header {
       }
     }
 
-  
+    .cart {
+      padding: 5px;
+      border-radius: 36px;
+      border: solid 1px #E0E0E0;
+      cursor: pointer;
+
+      .cart-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background-color: $text-color;
+
+        img {
+          margin: 0 auto;
+          width: 23px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
   }
 
   @include onLargeDesktop {
@@ -159,7 +182,6 @@ header {
         }
       }
     }
-
   }
 
   @include onLargeTablet {
@@ -171,7 +193,6 @@ header {
         margin-right: 0;
 
         input {
-
           height: 40px;
         }
 
@@ -207,7 +228,9 @@ header {
     padding: 15px 0;
 
     .desktop-menu {
-      display: none;
+      position: absolute;
+      top: -100%;
+      left: 0;
     }
 
     .mobile-menu {
