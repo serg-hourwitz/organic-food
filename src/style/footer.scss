@@ -19,6 +19,10 @@ footer {
     border-left: solid 1px #D4D4D4;
   }
 
+  .about__socials {
+    flex-wrap: wrap;
+  }
+
   .utilities {
     padding-left: 50px;
   }
@@ -129,48 +133,48 @@ footer {
   @include onLargeTablet {
     .footer_top {
       padding-bottom: 0;
-    
-    .contacts {
-      padding-right: 10px;
-    }
 
-    .about {
-      padding: 0 10px;
-    }
-
-    .utilities {
-      padding-left: 10px;
-    }
-
-    .logo {
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 14px;
-
-      &.description {
-        margin-bottom: 15px;
+      .contacts {
+        padding-right: 10px;
       }
-    }
 
-    h3 {
-      font-size: 20px;
-    }
+      .about {
+        padding: 0 10px;
+      }
 
-    ul {
-      gap: 30px;
-      padding-bottom: 40px;
+      .utilities {
+        padding-left: 10px;
+      }
 
-      li {
+      .logo {
+        margin-bottom: 10px;
+      }
+
+      p {
         font-size: 14px;
+
+        &.description {
+          margin-bottom: 15px;
+        }
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+
+      ul {
+        gap: 30px;
+        padding-bottom: 40px;
+
+        li {
+          font-size: 14px;
+        }
       }
     }
   }
-}
 
   @include onSmallTablet {
-    
+
     .contacts {
       padding-right: 20px;
     }
@@ -214,7 +218,7 @@ footer {
 
     .footer_top {
       flex-wrap: wrap;
-      
+
 
       .contacts {
         padding-right: 30px;
@@ -264,6 +268,23 @@ footer {
       ul.utilities_list {
         gap: 16px;
         padding-bottom: 0;
+      }
+    }
+  }
+
+  @include onSmallMobile {
+    .footer_top {
+      .contacts {
+        padding-right: 0;
+      }
+
+      .utilities {
+        padding-left: 0;
+      }
+
+      .utilities_title,
+      .utilities_list {
+        text-align: end;
       }
     }
   }

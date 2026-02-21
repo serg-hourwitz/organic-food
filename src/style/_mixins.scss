@@ -27,3 +27,9 @@
     @content;
   }
 }
+
+@mixin onSmallMobile {
+  @media (max-width: 377px) {
+    @content;
+  }
+}
